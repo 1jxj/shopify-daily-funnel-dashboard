@@ -3,8 +3,8 @@ window.SHOPIFY_FUNNEL_DATA = {
     store: "TORRAS-JP",
     timezone: "Asia/Tokyo",
     start: "2026-09-10",
-    end: "2026-09-19",
-    generatedAt: "2026-09-20",
+    end: "2026-09-20",
+    generatedAt: "2026-09-21",
     definition: "每日按 sessions 降序取前20个 landing_page_path；漏斗行为归因到该会话的首个落地页。",
     query: "FROM sessions SHOW sessions, sessions_with_cart_additions, sessions_that_reached_checkout, sessions_that_completed_checkout, added_to_cart_rate, reached_checkout_rate, conversion_rate GROUP BY landing_page_path SINCE {date} UNTIL {date} ORDER BY sessions DESC LIMIT 20",
     pageQuery: "FROM sessions SHOW sessions, sessions_with_cart_additions, sessions_that_reached_checkout, sessions_that_completed_checkout, added_to_cart_rate, reached_checkout_rate, conversion_rate WHERE landing_page_path IN ('/products/ostand-o3-hue-iphone-case','/products/ostand-q3-air-iphone-case','/products/ostand-q3-vegskin-iphone-case','/products/ostand-q3-air-pro-iphone-case') GROUP BY day, landing_page_path SINCE 2026-09-10 UNTIL {date} ORDER BY day ASC, landing_page_path ASC LIMIT 1000"
@@ -229,6 +229,28 @@ window.SHOPIFY_FUNNEL_DATA = {
       ["/products/ostand-q3-air-soccer-case",144,3,1,0,2.08,0.69,0],
       ["/products/ostand-q3-silicone-iphone-17series",130,2,3,0,1.53,2.30,0],
       ["/blogs/news/the-edge-of-the-glass-screen-protector-is-lifting",107,0,0,0,0,0,0]
+    ],
+    "2026-09-20": [
+      ["/",3459,95,81,39,2.75,2.34,1.13],
+      ["/products/ostand-q3-vegskin-iphone-case",2420,30,22,6,1.24,0.91,0.25],
+      ["/products/ostand-q3-air-pro-iphone-case",2383,28,34,13,1.18,1.43,0.55],
+      ["/products/ostand-q3-air-iphone-case",1449,16,27,8,1.10,1.86,0.55],
+      ["/products/ostand-o3-hue-iphone-case",1199,16,16,5,1.33,1.33,0.42],
+      ["/pages/film-all",932,0,1,1,0,0.11,0.11],
+      ["/pages/phone-case-series",914,15,12,5,1.64,1.31,0.55],
+      ["/pages/iphone-18-campain",841,12,18,4,1.43,2.14,0.48],
+      ["/collections/iphone-18-pro-cases",681,15,14,9,2.20,2.06,1.32],
+      ["/pages/uk-de-jp-installation-video",520,0,0,0,0,0,0],
+      ["/products/torras-flasheye-dot-45w-1",300,3,1,0,1.00,0.33,0],
+      ["/pages/sport-activity",263,0,0,0,0,0,0],
+      ["/collections/iphone-18-pro-max-cases",236,3,2,1,1.27,0.85,0.42],
+      ["/products/torras-minimag-pro-5000mah-semi-solid-state-power-bank-1",153,2,1,0,1.31,0.65,0],
+      ["/products/ostand-q3-air-soccer-case",138,1,1,0,0.72,0.72,0],
+      ["/products/flexline-pro-60w-100cm-retractable-cable-charger-1",129,0,0,0,0,0,0],
+      ["/products/ostand-q3-air-samsung-galaxy-s26-ultra-case",128,3,1,0,2.34,0.78,0],
+      ["/products/ostand-q3-silicone-iphone-17series",119,1,0,0,0.84,0,0],
+      ["/collections/iphone-17-1",112,2,3,1,1.79,2.68,0.89],
+      ["/products/flexline-3-in-1-cube-10000mah-charger-powerbank-1",109,0,0,0,0,0,0]
     ]
   },
   trackedPages: [
@@ -297,6 +319,12 @@ window.SHOPIFY_FUNNEL_DATA = {
       ["/products/ostand-q3-air-iphone-case",1458,11,18,3,0.75,1.23,0.20],
       ["/products/ostand-q3-vegskin-iphone-case",2127,20,26,11,0.94,1.22,0.51],
       ["/products/ostand-q3-air-pro-iphone-case",2203,18,32,8,0.81,1.45,0.36]
+    ],
+    "2026-09-20": [
+      ["/products/ostand-o3-hue-iphone-case",1199,16,16,5,1.33,1.33,0.42],
+      ["/products/ostand-q3-air-iphone-case",1449,16,27,8,1.10,1.86,0.55],
+      ["/products/ostand-q3-vegskin-iphone-case",2420,30,22,6,1.24,0.91,0.25],
+      ["/products/ostand-q3-air-pro-iphone-case",2383,28,34,13,1.18,1.43,0.55]
     ]
   }
 };
