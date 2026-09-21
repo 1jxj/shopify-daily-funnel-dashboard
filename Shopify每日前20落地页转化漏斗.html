@@ -68,7 +68,9 @@
     </section>
     <div class="footer" id="footer"></div>
   </main>
-  <script src="shopify_daily_funnel_data.js"></script>
+  <script>
+    document.write('<script src="shopify_daily_funnel_data.js?v=' + Date.now() + '"><\\/script>');
+  </script>
   <script>
     const D=window.SHOPIFY_FUNNEL_DATA, dates=Object.keys(D.days).sort();
     const $=s=>document.querySelector(s), fmt=n=>n.toLocaleString('ja-JP');
